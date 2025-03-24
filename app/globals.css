@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+*,
+:root,
+html,
+body {
+  font-family: savana, sans-serif; /* Default font set to savana */
+}
+
+@font-face {
+  font-family: savana;
+  src: url(../public/fonts/PayPalSansSmall-Regular-Klim.ttf);
+}
+
+@font-face {
+  font-family: savana-thinner;
+  src: url(../public/fonts/PayPalSansBig-Light-Klim.woff);
+}
+
+.box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.background-image {
+  background-image: url("../public/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.fixed-text {
+  font-family: savana-thinner; /* Using the lighter savana-thinner font */
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+}
