@@ -16,6 +16,8 @@ export default function Footer() {
         flex
         flex-col
         bg-neutral-100
+        border-t-[1px]
+        border-t-neutral-200
       "
     >
       <div className="">
