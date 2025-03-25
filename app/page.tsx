@@ -74,7 +74,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="flex flex-col gap-10 items-start px-20 py-10">
+      <div className="flex flex-col gap-10 items-start md:px-20 px-5 jppy-10">
         <p className="text-[25px] text-[#656565]">Jobs For You</p>
         <div
           className="

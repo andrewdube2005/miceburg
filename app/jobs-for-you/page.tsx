@@ -39,7 +39,7 @@ export default function page() {
 
 
   return (
-    <div className="flex flex-col gap-10 items-start px-20 py-[70px]">
+    <div className="flex flex-col gap-10 items-start nd:px-20 px-5 py-[70px]">
       <p className="text-[25px] text-[#656565] pt-10">Jobs For You</p>
       <div
                 className="
