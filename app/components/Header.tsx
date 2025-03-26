@@ -40,7 +40,7 @@ export default function Header() {
           {/* Show X when open, ☰ when closed */}
         </button>
         <Link href="/">
-          <h1 className="text-[25px] font-black text-[#404040]">Miceburg</h1>
+          <h1 className="text-[20px] md:text-[25px] font-black text-[#404040]">Miceburg</h1>
         </Link>
       </div>
       {/* Desktop Menu */}
@@ -149,7 +149,7 @@ export default function Header() {
               scheduleModal.onOpen();
               setMenuOpen(false);
             }}
-            className="text-[14px] text-[#0094ea] border-2 border-[#0094ea] px-8 py-2 rounded-full hover:bg-[#0094ea] hover:text-white transition-all duration-500 ease-in-out mt-4"
+            className="text-[13px] md:text-[14px] text-[#0094ea] border-2 border-[#0094ea] px-5 md:px-8 py-2 rounded-full hover:bg-[#0094ea] hover:text-white transition-all duration-500 ease-in-out mt-4"
           >
             Schedule Meeting
           </button>
