@@ -29,17 +29,28 @@ export default function Header() {
        z-40
      "
     >
-      {/* Logo */}
-      <Link href="/">
-        <h1 className="text-[25px] font-black text-[#404040]">Miceburg</h1>
-      </Link>
-
+      <div className="flex flex-row gap-3 items-center">
+        {" "}
+        {/* Mobile Menu Toggle Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-2xl"
+        >
+          {menuOpen ? <FiX /> : <FiMenu />}{" "}
+          {/* Show X when open, ☰ when closed */}
+        </button>
+        <Link href="/">
+          <h1 className="text-[25px] font-black text-[#404040]">Miceburg</h1>
+        </Link>
+      </div>
       {/* Desktop Menu */}
       <div className="hidden md:flex flex-row gap-10 items-center">
         <Link
           href="/"
           className={`text-[15px] ${
-            pathname === "/" ? "text-[#0094ea] font-black" : "text-[#404040] hover:underline"
+            pathname === "/"
+              ? "text-[#0094ea] font-black"
+              : "text-[#404040] hover:underline"
           }`}
         >
           Home
@@ -47,7 +58,9 @@ export default function Header() {
         <Link
           href="/jobs-for-you"
           className={`text-[15px] ${
-            pathname === "/jobs-for-you" ? "text-[#0094ea]" : "text-[#404040] hover:underline"
+            pathname === "/jobs-for-you"
+              ? "text-[#0094ea]"
+              : "text-[#404040] hover:underline"
           }`}
         >
           Jobs For You
@@ -55,7 +68,9 @@ export default function Header() {
         <Link
           href="/application"
           className={`text-[15px] ${
-            pathname === "/application" ? "text-[#0094ea]" : "text-[#404040] hover:underline"
+            pathname === "/application"
+              ? "text-[#0094ea]"
+              : "text-[#404040] hover:underline"
           }`}
         >
           Application
@@ -63,7 +78,9 @@ export default function Header() {
         <Link
           href="/services"
           className={`text-[15px] ${
-            pathname === "/services" ? "text-[#0094ea]" : "text-[#404040] hover:underline"
+            pathname === "/services"
+              ? "text-[#0094ea]"
+              : "text-[#404040] hover:underline"
           }`}
         >
           Services
@@ -71,7 +88,9 @@ export default function Header() {
         <Link
           href="/about"
           className={`text-[15px] ${
-            pathname === "/about" ? "text-[#0094ea]" : "text-[#404040] hover:underline"
+            pathname === "/about"
+              ? "text-[#0094ea]"
+              : "text-[#404040] hover:underline"
           }`}
         >
           About
@@ -85,11 +104,6 @@ export default function Header() {
         className="text-[14px] text-[#0094ea] border-2 border-[#0094ea] px-8 py-2 rounded-full hover:bg-[#0094ea] hover:text-white transition-all duration-500 ease-in-out hidden md:block"
       >
         Schedule Meeting
-      </button>
-
-      {/* Mobile Menu Toggle Button */}
-      <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl">
-        {menuOpen ? <FiX /> : <FiMenu />} {/* Show X when open, ☰ when closed */}
       </button>
 
       {/* Mobile Menu (Visible when menuOpen is true) */}
