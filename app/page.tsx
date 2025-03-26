@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div className="pt-[70px] h-full w-full overflow-y-auto">
-      <div className="background-image bg-cover bg-center h-[60vh] w-screeen">
+      <div className="background-image bg-cover bg-center md:h-[60vh] h-[40vh] w-screeen">
         <div className="h-full w-full backdrop-blur-[1px] flex flex-col items-center justify-center gap-12">
           <div className="leading-16 text-center">
             <h1 className="text-[40px] font-black text-white ">Miceburg</h1>
