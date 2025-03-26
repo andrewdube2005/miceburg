@@ -43,7 +43,8 @@ export default function Header() {
           <h1 className="text-[20px] md:text-[25px] font-black text-[#404040]">Miceburg</h1>
         </Link>
       </div>
-      {/* Desktop Menu */}
+      
+      <div className="flex flex-row gap-10 items-center">
       <div className="hidden md:flex flex-row gap-10 items-center">
         <Link
           href="/"
@@ -105,6 +106,7 @@ export default function Header() {
       >
         Schedule Meeting
       </button>
+      </div>
 
       {/* Mobile Menu (Visible when menuOpen is true) */}
       {menuOpen && (
