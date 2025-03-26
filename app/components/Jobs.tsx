@@ -17,7 +17,7 @@ const Jobs: React.FC<JobsProps> = ({
   status,
 }) => {
   return (
-    <div className="flex flex-col gap-2 rounded-[20px] w-full h-full aspect-12/9 box-shadow px-5 py-4 ">
+    <div className="flex flex-col gap-2 rounded-[20px] w-full h-max box-shadow px-5 py-4 ">
       <div className="flex flex-col gap-1">
         <div className="flex justify-between items-center">
           <h1 className="text-[18px] font-black text-[#505050]">{title}</h1>

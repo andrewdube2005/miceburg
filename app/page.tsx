@@ -45,9 +45,9 @@ export default function Home() {
   return (
     <div className="pt-[70px] h-full w-full overflow-y-auto">
       <div className="background-image bg-cover bg-center md:h-[60vh] h-[40vh] w-screeen">
-        <div className="h-full w-full backdrop-blur-[1px] flex flex-col items-center justify-center gap-12">
+        <div className="h-full w-full backdrop-blur-[1px] flex flex-col items-center justify-center gap:8 md:gap-12">
           <div className="leading-16 text-center">
-            <h1 className="text-[40px] font-black text-white ">Miceburg</h1>
+            <h1 className="text-[30px] md:text-[40px] font-black text-white ">Miceburg</h1>
             <p className="fixed-text">Best Business Partner</p>
           </div>
           <button
@@ -59,8 +59,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-[60vh] w-full bg-sky-500 flex flex-col items-center justify-center">
-        <h1 className="text-[35px] text-white font-light">
+      <div className="h-[40vh] md:h-[60vh] w-full bg-sky-500 flex flex-col items-center justify-center">
+        <h1 className="text-[18px] md:text-[35px] text-white font-black text-center">
           Join us into making a better world
         </h1>
         <p className="text-[17px]  text-white pt-5 font-[savana-thinner]">
@@ -74,7 +74,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="flex flex-col gap-10 items-start md:px-20 px-5 jppy-10">
+      <div className="flex flex-col gap-10 items-start md:px-20 px-5 py-10">
         <p className="text-[25px] text-[#656565]">Jobs For You</p>
         <div
           className="

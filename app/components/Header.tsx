@@ -101,7 +101,7 @@ export default function Header() {
       {/* Schedule Meeting Button (Always Visible) */}
       <button
         onClick={scheduleModal.onOpen}
-        className="text-[14px] text-[#0094ea] border-2 border-[#0094ea] px-8 py-2 rounded-full hover:bg-[#0094ea] hover:text-white transition-all duration-500 ease-in-out hidden md:block"
+        className="text-[14px] text-[#0094ea] border-2 border-[#0094ea] px-8 py-2 rounded-full hover:bg-[#0094ea] hover:text-white transition-all duration-500 ease-in-out h-max"
       >
         Schedule Meeting
       </button>

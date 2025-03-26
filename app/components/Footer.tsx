@@ -11,7 +11,8 @@ export default function Footer() {
   return (
     <div
       className="
-        px-20
+        px-5
+        md:px-20
         py-10
         flex
         flex-col
@@ -94,7 +95,9 @@ export default function Footer() {
 
       <div className="">
         <div className="mt-8">
-          <p className="text-[13px] text-[#656565]">Miceburg Copyright 2025 - All rights reserved</p>
+          <p className="text-[13px] text-[#656565]">
+            Miceburg Copyright 2025 - All rights reserved
+          </p>
         </div>
       </div>
     </div>
